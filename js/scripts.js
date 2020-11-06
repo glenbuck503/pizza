@@ -15,7 +15,7 @@ Pizza.prototype.addValue = function (size, topping1, topping2, topping3) {
 }
 
 Pizza.prototype.displayPizza = function(size, topping1, topping2, topping3) {
-  $("#final-price").append("The cost of your pizza is " );
+  $("#final-price").append("The cost of your pizza is " + topping1 );
 
 }
 
@@ -38,13 +38,13 @@ $(document).ready(function() {
     const size = parseInt($("select#size").val());
     
     const parseTop1 = parseInt($("select#topping1").val());
-    const topping1 = $("#topping2 option:selected").text();
+    const topping1 = $("#topping1 option:selected").val();
 
     const parseTop2 = parseInt($("select#topping2").val()); 
-    const topping2 = $("#topping2 option:selected").text();
+    const topping2 = $("#topping2 option:selected").val();
     
     const parseTop3 = parseInt($("select#topping3").val());
-    const topping3 = $("#topping3 option:selected").text();
+    const topping3 = $("#topping3 option:selected").val();
 
    $("#customerOrder").show();
    $("#final-price").text();
