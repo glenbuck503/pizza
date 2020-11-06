@@ -12,16 +12,17 @@
   <h1> Welcome to PDX Custom Pizza</h1>
   <br><br>
   <div class="container">
+    <form id="questions">
     <h2>Please choose your size</h2>
     <div class="userSize">
-      <form id="questions">
       <label for="quest1"></label>
       <select id="quest1">
-        <option value= 8.00>Small $8</option>
-        <option value= 10.00>Medium $10</option>
-        <option value= 12.00>Large $12</option>
+        <option value= "11">Small $8</option>
+        <option value= "14">Medium $10</option>
+        <option value= "17">Large $12</option>
       </select>
     </div>
+    
       <br><br>
       <div class="firstTopping">
         <h2>Please choose your first topping</h2>
@@ -29,15 +30,15 @@
           <div class="form-group">
             <label for="topping1"></label>
             <select id="topping1">
-              <option value= 1.75>Pepperoni $1.75</option>
-              <option value= 1.25>Sausage $1.25</option>
-              <option value= 1.25>Chicken $1.25</option>
-              <option value= 1.50>Olives $1.50</option>
-              <option value= 1.50>Pineapple $1.50</option>
-              <option value= 1.50>Spinach $1.50</option>
-              <option value= 1.75>Mushrooms $1.75</option>
-              <option value= 1.75>Green Peppers $1.75</option>
-              <option value= 0.00>None</option>
+              <option value= "1">Pepperoni $1</option>
+              <option value= "2">Sausage $2</option>
+              <option value= "2">Chicken $2</option>
+              <option value= "1">Olives $1</option>
+              <option value= "2">Pineapple $2</option>
+              <option value= "2">Spinach $2</option>
+              <option value= "1">Mushrooms $1</option>
+              <option value= "1">Green Peppers $1</option>
+              <option value= "0">None</option>
             </select>
           </div>
         </div>
@@ -47,15 +48,15 @@
           <div class="form-group">
             <label for="topping2"></label>
             <select id="topping2">
-              <option value= 1.50>Spinach $1.50</option>
-              <option value= 1.25>Sausage $1.25</option>
-              <option value= 1.25>Chicken $1.25</option>
-              <option value= 1.50>Olives $1.50</option>
-              <option value= 1.50>Pineapple $1.50</option>
-              <option value= 1.25>Olives $1.50</option>
-              <option value= 1.75>Mushrooms $1.75</option>
-              <option value= 1.25>Pepperoni $1.25</option>
-              <option value= 0.00>None</option>
+              <option value= "1">Spinach $1</option>
+              <option value= "1">Sausage $1</option>
+              <option value= "2">Chicken $2</option>
+              <option value= "1">Olives $1</option>
+              <option value= "1">ineapple $1</option>
+              <option value= "2">Olives $2</option>
+              <option value= "2">Mushrooms $2</option>
+              <option value= "1">Pepperoni $1</option>
+              <option value= "0">None</option>
             </select>
           </div>
       </div>
@@ -64,15 +65,13 @@
         <div class="form-group">
           <label for="topping3"></label>
           <select id="topping3">
-            <option value= 1.50>Chicken $1.50</option>
-            <option value= 1.25>Sausage $1.25</option>
-            <option value= 1.25>Spinach $1.25</option>
-            <option value= 1.50>Olives $1.50</option>
-            <option value= 1.50>Pineapple $1.50</option>
-            <option value= 1.25>Olives $1.50</option>
-            <option value= 1.75>Mushrooms $1.75</option>
-            <option value= 1.25>Pepperoni $1.25</option>
-            <option value= 0.00>None</option>
+            <option value= "1">Chicken $1</option>
+            <option value= "1">Sausage $1</option>
+            <option value= "1">Spinach $1</option>
+            <option value=  "2">Olives $2</option>
+            <option value= "2">Pineapple $2</option>
+            <option value= "2">Olives $2</option>
+            <option value= "0">None</option>
           </select>
           <br><br><br>
           <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
