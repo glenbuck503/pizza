@@ -13,28 +13,74 @@
   <br><br>
   <div class="container">
     <h2>Please choose your size</h2>
-    <form id="sizes"> 
-      <label for="pizza-size"></label>
-      <select id="pizza-size">
-        <option value="small">Small  6 slices</option>
-        <option value="medium">Medium 8 slices</option>
-        <option value="Large">Large 10 slices</option>
+    <div class="userSize">
+      <form id="questions">
+      <label for="quest1"></label>
+      <select id="quest1">
+        <option value= 8.00>Small $8</option>
+        <option value= 10.00>Medium $10</option>
+        <option value= 12.00>Large $12</option>
       </select>
-    </form>
-    <h2>Please choose your toppings</h2>
-    <form id="toppings">
-      <label for="pizza-toppings"></label>
-      <select id="pizza-toppings">
-        <option value="1">Olives</option>
-        <option value="1">Pepperoni</option>
-        <option value="1">Ham</option>
-        <option value="1">Chicken</option>
-        <option value="1">Spinach</option>
-        <option value="1">Mushrooms</option>
-        <option value="1">Green Peppers</option>
-      </select>
-      </form>
-
+    </div>
+      <br><br>
+      <div class="firstTopping">
+        <h2>Please choose your first topping</h2>
+        <form id="orderForm">
+          <div class="form-group">
+            <label for="topping1"></label>
+            <select id="topping1">
+              <option value= 1.75>Pepperoni $1.75</option>
+              <option value= 1.25>Sausage $1.25</option>
+              <option value= 1.25>Chicken $1.25</option>
+              <option value= 1.50>Olives $1.50</option>
+              <option value= 1.50>Pineapple $1.50</option>
+              <option value= 1.50>Spinach $1.50</option>
+              <option value= 1.75>Mushrooms $1.75</option>
+              <option value= 1.75>Green Peppers $1.75</option>
+              <option value= 0.00>None</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="secondTopping">
+          <h2>Please choose your second topping</h2>
+          <div class="form-group">
+            <label for="topping2"></label>
+            <select id="topping2">
+              <option value= 1.50>Spinach $1.50</option>
+              <option value= 1.25>Sausage $1.25</option>
+              <option value= 1.25>Chicken $1.25</option>
+              <option value= 1.50>Olives $1.50</option>
+              <option value= 1.50>Pineapple $1.50</option>
+              <option value= 1.25>Olives $1.50</option>
+              <option value= 1.75>Mushrooms $1.75</option>
+              <option value= 1.25>Pepperoni $1.25</option>
+              <option value= 0.00>None</option>
+            </select>
+          </div>
+      </div>
+        <br>
+        <h2>Please choose your third topping</h2>
+        <div class="form-group">
+          <label for="topping3"></label>
+          <select id="topping3">
+            <option value= 1.50>Chicken $1.50</option>
+            <option value= 1.25>Sausage $1.25</option>
+            <option value= 1.25>Spinach $1.25</option>
+            <option value= 1.50>Olives $1.50</option>
+            <option value= 1.50>Pineapple $1.50</option>
+            <option value= 1.25>Olives $1.50</option>
+            <option value= 1.75>Mushrooms $1.75</option>
+            <option value= 1.25>Pepperoni $1.25</option>
+            <option value= 0.00>None</option>
+          </select>
+          <br><br><br>
+          <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
+        </div>
+       </form>
+        <div id="customerOrder">
+          <p>Pricev <span id="final-price"></span></p>
+      </div>
     </div>
 </body>
 </html>
