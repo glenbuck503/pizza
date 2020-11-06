@@ -1,13 +1,7 @@
-#output {
-  display: none;
+body {
+  background-color: rgb(66, 165, 165);
 }
-
 
 h1 {
   text-align: center;
 }
-
-body {
-  background-color: #0a7575;
-}
-
