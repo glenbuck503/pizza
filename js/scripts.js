@@ -1,16 +1,25 @@
 function Pizza(size,toppings) {
   this.size = size;
   this.toppings = toppings
+  let price = 0;
 }
 
-let price = 3;
+
 
 Pizza.prototype.addValue = function (size, topping1, topping2, topping3) {
   let price = size + topping1 + topping2 + topping3
-  this.price = price;
+  return price;
+
+  this.price;
+  // this.price = price;
 }
 
-console.log(price)
+Pizza.prototype.displayPizza = function(size, topping1, topping2, topping3) {
+  $("#final-price").append("The cost of your pizza is " );
+
+}
+
+
 
 
 
@@ -37,8 +46,9 @@ $(document).ready(function() {
     const parseTop3 = parseInt($("select#topping3").val());
     const topping3 = $("#topping3 option:selected").text();
 
-   
+   $("#customerOrder").show();
+   $("#final-price").text();
     pizza.addValue(size + topping1 + topping2 + topping3);
-    // pizza.showPizza(cheesename, saucename, extra1name, extra2name, extra3name)
+    pizza.displayPizza(size, topping1, topping2,topping3);
   });
 });
