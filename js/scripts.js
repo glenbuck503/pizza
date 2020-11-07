@@ -11,16 +11,13 @@ Pizza.prototype.addValue = function (size, topping1, topping2, topping3) {
   return price;
 
   this.price;
-  // this.price = price;
+  this.price = price;
 }
 
 Pizza.prototype.displayPizza = function(size, topping1, topping2, topping3) {
   $("#final-price").append("The cost of your pizza is " + topping1 );
 
 }
-
-
-
 
 
 
@@ -47,7 +44,7 @@ $(document).ready(function() {
     const topping3 = $("#topping3 option:selected").val();
 
    $("#customerOrder").show();
-   $("#final-price").text();
+   $("#final-price").text()
     pizza.addValue(size + topping1 + topping2 + topping3);
     pizza.displayPizza(size, topping1, topping2,topping3);
   });
