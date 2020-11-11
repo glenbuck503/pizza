@@ -15,11 +15,11 @@
     <form id="pizzaOrder">
     <h2>Please choose your size</h2>
     <div class="userSize">
-      <label for="quest1"></label>
-      <select id="quest1">
-        <option value= "11">Small $8</option>
+      <label for="userSize"></label>
+      <select id="userSize">
+        <option value= "12">Small $8</option>
         <option value= "14">Medium $10</option>
-        <option value= "17">Large $12</option>
+        <option value= "16">Large $12</option>
       </select>
     </div>
     
@@ -61,26 +61,27 @@
           </div>
       </div>
         <br>
+        <div class="thirdTopping">
         <h2>Please choose your third topping</h2>
         <div class="form-group">
-           <label for="topping3"></label>
-            <select class="form-control" id="topping3">
-            <option value= "1">Chicken $1</option>
-            <option value= "1">Sausage $1</option>
-            <option value= "1">Spinach $1</option>
-            <option value=  "2">Olives $2</option>
-            <option value= "2">Pineapple $2</option>
-            <option value= "2">Olives $2</option>
-            <option value= "0">None</option>
-          </select>
-          <br><br><br>
-          <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
-        </div>
+          <label for="topping3"></label>
+           <select class="form-control" id="topping3">
+           <option value= "1">Chicken $1</option>
+           <option value= "1">Sausage $1</option>
+           <option value= "1">Spinach $1</option>
+           <option value=  "2">Olives $2</option>
+           <option value= "2">Pineapple $2</option>
+           <option value= "2">Olives $2</option>
+           <option value= "0">None</option>
+         </select>
+         <br><br><br>
+         <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
+       </div>
+      </div>
        </form>
         <div id="customerOrder">
-           <p><span id="final-price"></span></p>
-         
-      </div>
+          <p><span id="final-price"></span></p>
+        </div>
     </div>
 </body>
 </html>

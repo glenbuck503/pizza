@@ -1,21 +1,37 @@
-function Pizza(size,toppings) {
+function Pizza(size) {
   this.size = size;
-  this.toppings = toppings
-  let price = 0;
+  this.toppings =[];
+  this.price = 0;
 }
 
 
 
-Pizza.prototype.addValue = function (size, topping1, topping2, topping3) {
-  let price = size + topping1 + topping2 + topping3
-  return price;
 
-  this.price;
+
+Pizza.prototype.addValue = function (size, parseTop1, parseTop2, parseTop3) {
+  let price = size + parseTop1 + parseTop2 + parseTop3;
   this.price = price;
+  
 }
+
+Pizza.prototype.addToppings = function (toppings) {
+  this.toppings = toppings;
+}
+
+// Pizza.prototype.costCalculator = function(){
+//   if (this.size === "Large") {
+//     this.cost += 5; 
+//   }
+//   if (this.toppings.length > 1) {
+//     this.cost += 5; 
+//   }
+//   return this.cost; 
+// }
 
 Pizza.prototype.displayPizza = function(size, topping1, topping2, topping3) {
-  $("#final-price").append("The cost of your pizza is " + topping1 );
+
+  let toppingDisplay = size + topping1 + topping2 + topping3;
+  $("#final-price").text("The cost of your pizza is " + toppingDisplay);
 
 }
 
@@ -32,7 +48,8 @@ $(document).ready(function() {
 
     let pizza = new Pizza();
     
-    const size = parseInt($("select#size").val());
+    const size = $("#userSize option:selected").val();
+    const parseSize = $("#userSize option:selected").val();
     
     const parseTop1 = parseInt($("select#topping1").val());
     const topping1 = $("#topping1 option:selected").val();
@@ -43,9 +60,10 @@ $(document).ready(function() {
     const parseTop3 = parseInt($("select#topping3").val());
     const topping3 = $("#topping3 option:selected").val();
 
-   $("#customerOrder").show();
+   
+   pizza.addValue(size, parseTop1, parseTop2, parseTop3);
+    pizza.displayPizza(size, topping1, topping2, topping3);
+    $("#customerOrder").show();
    $("#final-price").text()
-    pizza.addValue(size + topping1 + topping2 + topping3);
-    pizza.displayPizza(size, topping1, topping2,topping3);
   });
 });
