@@ -16,16 +16,15 @@
     <div class="userSize">
       <label for="userSize"></label>
       <select id="userSize">
-        <option value= "12">Small $12</option>
-        <option value= "14">Medium $14</option>
-        <option value= "16">Large $16</option>
+        <option value= "small">Small $12</option>
+        <option value= "medium">Medium $14</option>
+        <option value= "large">Large $16</option>
       </select>
     </div>
     
       <br><br>
-      <div class="firstTopping">
+      <div class="toppings">
         <h2>Please choose your first topping</h2>
-        <form id="userToppings">
           <div class="form-group">
             <input type="checkbox" name="topping" value="Sausage"> Sausage</br>
             <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni</br>
@@ -35,16 +34,12 @@
             <input type="checkbox" name="topping" value="Chicken"> Chicken</br>
           </div>
           </div>
-        </div>
-        <br>
          <br><br><br>
+         <div class="checkout">
+           <p>Ready to checkout?</p>
          <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
-       </div>
-      </div>
+         </div>
        </form>
-        <div id="output">
-          <p><span id="price"></span></p>
-        </div>
     </div>
 </body>
 </html>
