@@ -17,9 +17,9 @@
     <div class="userSize">
       <label for="userSize"></label>
       <select id="userSize">
-        <option value= "12">Small $8</option>
-        <option value= "14">Medium $10</option>
-        <option value= "16">Large $12</option>
+        <option value= "12">Small $12</option>
+        <option value= "14">Medium $14</option>
+        <option value= "16">Large $16</option>
       </select>
     </div>
     
@@ -28,18 +28,13 @@
         <h2>Please choose your first topping</h2>
         <form id="orderForm">
           <div class="form-group">
-            <label for="topping1"></label>
-            <select class="form-control" id="topping1">
-              <option value= "1">Pepperoni $1</option>
-              <option value= "2">Sausage $2</option>
-              <option value= "2">Chicken $2</option>
-              <option value= "1">Olives $1</option>
-              <option value= "2">Pineapple $2</option>
-              <option value= "2">Spinach $2</option>
-              <option value= "1">Mushrooms $1</option>
-              <option value= "1">Green Peppers $1</option>
-              <option value= "0">None</option>
-            </select>
+            <input type="checkbox" name="topping" value="Sausage"> Pepperoni</br>
+            <input type="checkbox" name="topping" value="Pepperoni"> Olives</br>
+            <input type="checkbox" name="topping" value="Pineapple"> Sausage</br>
+            <input type="checkbox" name="topping" value="Olives"> Mushrooms</br>
+            <input type="checkbox" name="topping" value="Ham"> Arugula</br>
+            <input type="checkbox" name="topping" value="Chicken"> Mushrooms</br>
+          </div>
           </div>
         </div>
         <br>
