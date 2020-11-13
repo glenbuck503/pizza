@@ -14,16 +14,16 @@
     <form id="pizzaOrder">
     <h2>Please choose your size</h2>
     <div class="userSize">
-      <label for="userSize"></label>
-      <select id="userSize">
+      <label for="size"></label>
+      <select id="size">
         <option value= "small">Small $12</option>
-        <option value= "medium">Medium $14</option>
+        
         <option value= "large">Large $16</option>
       </select>
     </div>
     
       <br><br>
-      <div class="toppings">
+      <div class="userToppings">
         <h2>Please choose your first topping</h2>
           <div class="form-group">
             <input type="checkbox" name="topping" value="Sausage"> Sausage</br>
@@ -40,6 +40,10 @@
          <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
          </div>
        </form>
+       <div id="output">
+         <p>Your pizza cost is :<span id="final"></span></p>
+
+       </div>
     </div>
 </body>
 </html>

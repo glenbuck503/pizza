@@ -4,16 +4,13 @@ function Pizza(size, toppings) {
   
 }
 
-Pizza.prototype.totalCost = function() {
+Pizza.prototype.totalPrice = function() {
   let total = 0;
   if (this.size === "small") {
-    total += 12;
-  } else if (this.size === "medium") {
-    total += 14;
+    total += 4;
   } else if (this.size === "large") {
-    total += 16;
-  }
-   else {
+    total += 6;
+  } else {
     total += 0;
   }
   for (let i=0; i < this.toppings.length; i++) {
@@ -24,10 +21,8 @@ Pizza.prototype.totalCost = function() {
 
 
 
-
-
 $(document).ready(function() {
-  $("form#pizzaOrder").submit(function (event)  {
+  $("form#pizzaOrder").submit(function(event)  {
     event.preventDefault();
 
     let size = $("select#userSize").val();
@@ -37,8 +32,9 @@ $(document).ready(function() {
     });
 
 
-    let pizza = new Pizza();
-    let price = pizza.totalCost();
+    let userPizza = new Pizza (size, toppings);
+    let price = userPizza.totalPrice();
+    
 
     
     
@@ -49,7 +45,8 @@ $(document).ready(function() {
    
    
     $("#output").show();
-    $("#totalCost").html("Your total will be $" + price +".00");
+    $("#final").text("your price is  $" + price + " thanks");
+    // $("#output").text("Your total will be $" + price +".00");
 
    
   });
