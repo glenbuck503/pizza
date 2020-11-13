@@ -14,35 +14,32 @@
     <img id="pizza" src="img/pizza.jpg" alt="picture of pizzas">
     <form id="pizzaOrder">
     <h2>Please choose your size</h2>
-    <div class="userSize">
-      <select id="size">
-        <option value= "small">Small $12</option>
-        <option value= "medium">Medium $14</option>
-        <option value= "large">Large $16</option>
-      </select>
+  <div class="userSize">
+    <select id="size">
+      <option value= "small">Small $12</option>
+      <option value= "medium">Medium $14</option>
+      <option value= "large">Large $16</option>
+    </select>
+  </div>
+  <br><br>
+  <div class="userToppings">
+    <h2>Please choose your first topping</h2>
+    <div class="form-group">
+      <input type="checkbox" name="topping" value="Sausage"> Sausage</br>
+      <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni</br>
+      <input type="checkbox" name="topping" value="Pineapple"> Pineapple</br>
+      <input type="checkbox" name="topping" value="Olives"> Olives</br>
+      <input type="checkbox" name="topping" value="Ham"> Ham</br>
+      <input type="checkbox" name="topping" value="Chicken"> Chicken</br>
     </div>
-    <br><br>
-    <div class="userToppings">
-      <h2>Please choose your first topping</h2>
-        <div class="form-group">
-          <input type="checkbox" name="topping" value="Sausage"> Sausage</br>
-          <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni</br>
-          <input type="checkbox" name="topping" value="Pineapple"> Pineapple</br>
-          <input type="checkbox" name="topping" value="Olives"> Olives</br>
-          <input type="checkbox" name="topping" value="Ham"> Ham</br>
-          <input type="checkbox" name="topping" value="Chicken"> Chicken</br>
-        </div>
-    </div>
-    <br><br><br>
-    <div class="checkout">
-      <p>Ready to checkout?</p>
-      <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
-    </div>
-    </form>
-    <div id="output">
-      <p>Your pizza cost is :<span id="final"></span></p>
-      <img src="img/pizza.jpg" alt="picture of pizzas">
-    </div>
+  </div>
+  <div class="checkout">
+    <p><button type="submit" class="btn btn-success" id="orderButton">Get Price</button></p>
+  </div>
+  </form>
+  <div id="output">
+    <p><span id="total"></span></p>
+  </div>
   </div>
 </body>
 </html>

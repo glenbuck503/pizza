@@ -40,6 +40,6 @@ $(document).ready(function() {
     let price = userPizza.totalPrice();
     
     $("#output").show();
-    $("#final").text("your price is  $" + price + " thanks");
+    $("#total").text("The cost of your pizza is  $" + price + " . Thank you! Hope you enjoy!");
   });
 });

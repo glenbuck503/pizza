@@ -1,7 +1,5 @@
 body {
   background-color: rgb(66, 165, 165);
-  
-
 }
 
 h1 {
@@ -13,7 +11,7 @@ h1 {
 }
 
 #pizza {
-  width: 1000px;
-  
+  width: 1140px;
+  height: 300px;
 }
 
