@@ -11,6 +11,7 @@
   <h1> Welcome to PDX Custom Pizza</h1>
   <br><br>
   <div class="container">
+    <img id="pizza" src="img/pizza.jpg" alt="picture of pizzas">
     <form id="pizzaOrder">
     <h2>Please choose your size</h2>
     <div class="userSize">
@@ -20,30 +21,29 @@
         <option value= "large">Large $16</option>
       </select>
     </div>
-    
-      <br><br>
-      <div class="userToppings">
-        <h2>Please choose your first topping</h2>
-          <div class="form-group">
-            <input type="checkbox" name="topping" value="Sausage"> Sausage</br>
-            <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni</br>
-            <input type="checkbox" name="topping" value="Pineapple"> Pineapple</br>
-            <input type="checkbox" name="topping" value="Olives"> Olives</br>
-            <input type="checkbox" name="topping" value="Ham"> Ham</br>
-            <input type="checkbox" name="topping" value="Chicken"> Chicken</br>
-          </div>
-          </div>
-         <br><br><br>
-         <div class="checkout">
-           <p>Ready to checkout?</p>
-         <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
-         </div>
-       </form>
-       <div id="output">
-         <p>Your pizza cost is :<span id="final"></span></p>
-
-       </div>
+    <br><br>
+    <div class="userToppings">
+      <h2>Please choose your first topping</h2>
+        <div class="form-group">
+          <input type="checkbox" name="topping" value="Sausage"> Sausage</br>
+          <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni</br>
+          <input type="checkbox" name="topping" value="Pineapple"> Pineapple</br>
+          <input type="checkbox" name="topping" value="Olives"> Olives</br>
+          <input type="checkbox" name="topping" value="Ham"> Ham</br>
+          <input type="checkbox" name="topping" value="Chicken"> Chicken</br>
+        </div>
     </div>
+    <br><br><br>
+    <div class="checkout">
+      <p>Ready to checkout?</p>
+      <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
+    </div>
+    </form>
+    <div id="output">
+      <p>Your pizza cost is :<span id="final"></span></p>
+      <img src="img/pizza.jpg" alt="picture of pizzas">
+    </div>
+  </div>
 </body>
 </html>
 
