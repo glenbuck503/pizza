@@ -1,14 +1,32 @@
-function Pizza(size) {
+function Pizza(size, toppings) {
   this.size = size;
-  this.toppings =[];
-  this.price = 0;
+  this.toppings = toppings;
+  
 }
 
 
+// Pizza.prototype.addPrice = function() {
+//   let total = 5;
+//   if (this.size === "12") {
+//     total += 5;
+//   } else if (this.size === "14") {
+//     total += 7;
+//   } else if (this.size === "16") {
+//     total += 9;
+//   }
+//   else {
+//     total += 0;
+//   }
+//   for (let i=0; i < this.toppings.length; i++) {
+//     total +=1;
+//   }
+//   return total;
+  
+// };
 
 
 
-Pizza.prototype.addValue = function (size, parseTop1, parseTop2, parseTop3) {
+Pizza.prototype.addValue = function ( size) {
   let price = size + parseTop1 + parseTop2 + parseTop3;
   this.price = price;
   
@@ -42,14 +60,18 @@ $(document).ready(function() {
   $("form#pizzaOrder").submit(function (event)  {
     event.preventDefault();
 
+    let size = $("select#userSize");
+    let toppings = [];
+
    
 
     
 
     let pizza = new Pizza();
     
+    
     const size = $("#userSize option:selected").val();
-    const parseSize = $("#userSize option:selected").val();
+    
     
     const parseTop1 = parseInt($("select#topping1").val());
     const topping1 = $("#topping1 option:selected").val();
@@ -61,7 +83,7 @@ $(document).ready(function() {
     const topping3 = $("#topping3 option:selected").val();
 
    
-   pizza.addValue(size, parseTop1, parseTop2, parseTop3);
+   pizza.addValue(size,parseTop1, parseTop2, parseTop3);
     pizza.displayPizza(size, topping1, topping2, topping3);
     $("#customerOrder").show();
    $("#final-price").text()
